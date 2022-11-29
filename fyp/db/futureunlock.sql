@@ -45,8 +45,8 @@ CREATE TABLE `admin` (
 --
 
 INSERT INTO `admin` (`id`, `surname`, `name`, `idnum`, `gender`, `phone`, `email`, `address`, `password`, `adminphoto`) VALUES
-(3, 'Nkgudi', 'Thembinkosi', 1234567890123, 'Male', 637268032, '', 'Kliproots', '827ccb0eea8a706c4c34a16891f84e7b', 'Capture.JPG'),
-(4, 'Hadebe', 'Thembinkosi', 1234567890333, 'Male', 637268032, '', 'Kliproots', '827ccb0eea8a706c4c34a16891f84e7b', '');
+(3, 'Surname', 'Name', 1234567890123, 'Male', 1234567890, '', 'RSA', '827ccb0eea8a706c4c34a16891f84e7b', ''),
+(4, 'MySurname', 'MyName', 1234567890121, 'Female', 9876543210, '', 'ZA', '827ccb0eea8a706c4c34a16891f84e7b', '');
 
 -- --------------------------------------------------------
 
@@ -78,8 +78,8 @@ CREATE TABLE `application` (
 -- Dumping data for table `application`
 --
 
-INSERT INTO `application` (`id`, `idnum`, `surname`, `name`, `stream`, `hl`, `al`, `maths`, `lo`, `ns`, `ss`, `ems`, `tech`, `ca`, `fname`, `iname`, `status`) VALUES
-(36, 1234567890125, 'Nkgudi', 'Thembinkosi', 'SCIENCE', 7, 7, 7, 7, 7, 7, 7, 7, 7, '20211130210832_ResidenceRules.pdf', 'ResidenceRules.pdf', 'WAITING FOR DECISION');
+INSERT INTO `application` (`id`, `idnum`, `surname`, `name`, `stream`, `hl`, `al`, `maths`, `lo`, `ns`, `ss`, `ems`, `tech`, `ca`, `status`) VALUES
+(36, 1234567890125, 'Surname', 'Name', 'SCIENCE', 7, 7, 7, 7, 7, 7, 7, 7, 7, '20211130210832_ResidenceRules.pdf', 'ResidenceRules.pdf', 'WAITING FOR DECISION');
 
 -- --------------------------------------------------------
 
@@ -109,16 +109,6 @@ CREATE TABLE `learner` (
   `password` varchar(255) NOT NULL,
   `learnerphoto` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data for table `learner`
---
-
-INSERT INTO `learner` (`id`, `surname`, `name`, `idnum`, `gender`, `phone`, `email`, `address`, `fname`, `iname`, `gsurname`, `gname`, `gidnum`, `ggender`, `gphone`, `gemail`, `gaddress`, `relationship`, `password`, `learnerphoto`) VALUES
-(13, 'Nkgudi', 'Thembinkosi', 1234567890125, 'Male', 637268032, '', 'Kliproots', '20211120224300_KHETHOKUHLE Aegrotat.pdf', 'KHETHOKUHLE Aegrotat.pdf', 'Nkgudi', 'Modupi', 1234567890321, 'Male', 723459539, '', 'Kliproots', 'Father', '827ccb0eea8a706c4c34a16891f84e7b', ''),
-(31, 'Hadebe', 'Themba', 1234567890124, 'Female', 637268032, '', 'Kliproots', '20211128112139_KPROOF.pdf', 'KPROOF.pdf', 'Nkgudi', 'Modupi', 1234567890321, 'Male', 723459539, '', 'Kliproots', 'Grand Father', '827ccb0eea8a706c4c34a16891f84e7b', '');
-
--- --------------------------------------------------------
 
 --
 -- Table structure for table `website`
